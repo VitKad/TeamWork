@@ -12,7 +12,7 @@ public:
 	~ExpenseList();
 	void insertExp(Expense*);
 	void display();
-	float displaySummary(); 
+	float getSumOfExpenses();
 };
 
 #endif 
