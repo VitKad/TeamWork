@@ -18,6 +18,13 @@ UserInterface::~UserInterface()
 
 void UserInterface::interact()
 {
+	do
+	{
+		ptrUserInputScreen = new UserInputScreen(ptrUser);
+		ptrUserInputScreen->setUser();
+		system("cls");
+		if (ptrUserInputScreen->getRules() == 3) cout << "Пароль или логин неверный, введите еще раз\n";
+	} while (ptrUserInputScreen->getRules() == 3);
 
 	while (true)
 	{
@@ -26,7 +33,7 @@ void UserInterface::interact()
 		cout << "|          Меню            |\n";
 		cout << "|--------------------------|\n";
 		cout << "|  1  | Ввести данные      |\n";
-		cout << "|  2  | Вывести данные     |\n";
+		if (ptrUserInputScreen->getRules() == 1) cout << "|  2  | Вывести данные     |\n";
 		cout << "|  q  | Выход              |\n";
 		ch = getaChar();
 		system("cls");
@@ -60,7 +67,8 @@ void UserInterface::interact()
 		}                      
 		else if (ch == '2')       
 		{
-			
+			if (ptrUserInputScreen->getRules() == 1)
+			{
 				cout << "\n";
 				cout << "|     Вывести на экран     |\n";
 				cout << "|--------------------------|\n";
@@ -75,22 +83,22 @@ void UserInterface::interact()
 				{
 				case '1': ptrClientList->display();
 					break;
-				case '2': 
+				case '2':
 					break;
 				case '3': ptrExpenseList->display();
 					break;
-				case '4':      
+				case '4':
 					break;
 				default: cout << "Ошибка ввода\n";
 					break;
 				}
-				
-			
+
+			}
 		}
   
 		else if (ch == 'q')
 			return;           
 		else     cout << "Ошибка ввода\n";
 	}                       
-	
+	delete ptrClientInputScreen;
 }
