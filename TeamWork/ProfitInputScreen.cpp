@@ -3,7 +3,7 @@
 //Ввод дохода в таблицу
 void ProfitInputScreen::setProfit()
 {
-	cout << "Введите имя Клиента (Иванов И.И.): " << endl;
+	cout << "Введите имя Клиента (Иванов И.И): " << endl;
 	getaLine(addName);
 	cout << "Введите стоимость стирки (1000): " << endl;
 	cin >> addPriceCloth; cin.ignore(80, '\n');

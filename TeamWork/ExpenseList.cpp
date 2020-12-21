@@ -21,7 +21,7 @@ void ExpenseList::display()
 	cout << "\nКатегория          |Получатель              |Дата                    |Сумма\n";
 	cout << "------------------------------------------------------------------------------------------------\n";
 	if (vectPtrsExpenses.size() == 0) 
-		cout << "***Расходов нет***\n" << endl;
+		cout << "---Расходов нет---\n" << endl;
 	else
 	{
 		iter = vectPtrsExpenses.begin();

@@ -8,14 +8,14 @@ class Profit
 {
 private:
 	string name; 
-	int priceCloth;
-	int priceService;
+	float priceCloth;
+	float priceService;
 	string datePrice;
 public:
-	Profit(string, int, int, string);                 
-	int getPriceCloth();
+	Profit(string, float, float, string);                 
+	float getPriceCloth();
 	string getName();            
-	int getPriceService(); 
+	float getPriceService(); 
 	string getDate();
 };
 #endif

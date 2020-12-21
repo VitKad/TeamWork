@@ -3,7 +3,7 @@
 
 void ClientInputScreen::setClient()  //ввод клиентов
 {
-	cout << "Введите имя Клиента (Иванов И.И.): " << endl;
+	cout << "Введите имя Клиента (Иванов И.И): " << endl;
 	getaLine(addName);
 	cout << "Введите вид одежды (Футболка, Куртка): " << endl;
 	getaLine(addClother);
