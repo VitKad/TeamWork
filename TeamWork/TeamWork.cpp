@@ -3,7 +3,7 @@
 #include "stdafx.h" 
 #include "UserInterface.h" 
 int _tmain(int argc, _TCHAR* argv[]){ 
-	setlocale(LC_ALL, "rus");
+	system("chcp 1251 > nul");
 	UserInterface theUserInterface;
 	theUserInterface.interact();
 	return 0;
