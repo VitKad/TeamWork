@@ -1,7 +1,7 @@
 #include "stdafx.h" 
 #include "Profit.h" 
 
-Profit::Profit(string n, int pC, int pS, string dP) : name(n), priceCloth(pC), priceService(pS), datePrice(dP)
+Profit::Profit(string n, float pC, float pS, string dP) : name(n), priceCloth(pC), priceService(pS), datePrice(dP)
 {
 }
 // Методы получения имени, даты, стоимости одежды и услуги
@@ -15,12 +15,12 @@ string Profit::getDate()
 	return datePrice;
 }
 
-int Profit::getPriceCloth()  
+float Profit::getPriceCloth()  
 {
 	return priceCloth;
 }
 
-int Profit::getPriceService()        
+float Profit::getPriceService()        
 {
 	return priceService;
 }

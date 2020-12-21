@@ -12,8 +12,8 @@ private:
 	ClientList* ptrClientList;     
 	ProfitList* ptrProfitList;
 	string addName; 
-	int addPriceCloth;
-	int addPriceService;
+	float addPriceCloth;
+	float addPriceService;
 	string addDatePrice;
 public:
 	ProfitInputScreen(ClientList* ptrCL, ProfitList* ptrPL) : ptrClientList(ptrCL), ptrProfitList(ptrPL)
