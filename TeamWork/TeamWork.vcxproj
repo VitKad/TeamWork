@@ -97,12 +97,16 @@
     <ClInclude Include="UserInterface.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AnnualReport.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="ClientInputScreen.cpp" />
     <ClCompile Include="ClientList.cpp" />
     <ClCompile Include="ExpenseInputScreen.cpp" />
     <ClCompile Include="ExpenseList.cpp" />
     <ClCompile Include="Gets.cpp" />
+    <ClCompile Include="Profit.cpp" />
+    <ClCompile Include="ProfitInputScreen.cpp" />
+    <ClCompile Include="ProfitList.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>

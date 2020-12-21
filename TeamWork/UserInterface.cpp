@@ -4,6 +4,7 @@
 UserInterface::UserInterface()
 {
 	ptrClientList = new ClientList;
+	ptrProfitList = new ProfitList;
 	ptrExpenseList = new ExpenseList;
 }
 
@@ -11,12 +12,13 @@ UserInterface::UserInterface()
 UserInterface::~UserInterface()
 {
 	delete ptrClientList;
+	delete ptrProfitList;
 	delete ptrExpenseList;
 }
 
 
 
-void UserInterface::interact()
+void UserInterface::interact()  //отображение главного меню
 {
 	do
 	{
@@ -55,7 +57,9 @@ void UserInterface::interact()
 				delete ptrClientInputScreen;
 				break;
 				break;
-			case '2': 
+			case '2': ptrProfitInputScreen = new ProfitInputScreen(ptrClientList, ptrProfitList);
+				ptrProfitInputScreen->setProfit();
+				delete ptrProfitInputScreen;
 				break;
 			case '3': ptrExpenseInputScreen = new ExpenseInputScreen(ptrExpenseList);
 				ptrExpenseInputScreen->setExpense();
@@ -83,11 +87,13 @@ void UserInterface::interact()
 				{
 				case '1': ptrClientList->display();
 					break;
-				case '2':
+				case '2':ptrProfitList->display();
 					break;
 				case '3': ptrExpenseList->display();
 					break;
-				case '4':
+				case '4':ptrAnnualReport = new AnnualReport(ptrProfitList, ptrExpenseList);
+					ptrAnnualReport->display();
+					delete ptrAnnualReport;
 					break;
 				default: cout << "Ошибка ввода\n";
 					break;

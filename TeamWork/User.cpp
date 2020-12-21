@@ -9,7 +9,7 @@ User::~User()
 {
 }
 
-int User::access(string l, string p)
+int User::access(string l, string p)  //проверка на доступ
 {
 	if ("admin" == l && "1234" == p) return 1;
 	else if ("user" == l && "4321" == p)  return 2;
