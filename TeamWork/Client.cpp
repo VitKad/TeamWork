@@ -10,22 +10,22 @@ Client::~Client()
 {
 }
 
-string Client::getName() 
+string Client::getName()  //получение имени
 {
 	return name;
 }
 
-string Client::getClother() 
+string Client::getClother() //получение вида одежды
 {
 	return clother;
 }
 
-string Client::getService() 
+string Client::getService() //получение услуги
 {
 	return service;
 }
 
-string Client::getDate()  
+string Client::getDate()  //получение даты
 {
 	return date;
 }

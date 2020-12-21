@@ -4,18 +4,18 @@
 #include "ClientList.h"
 using namespace std;
 
-class ClientInputScreen
+class ClientInputScreen  // экран ввода клиентов
 {
 private:
-	ClientList* ptrClientList;
-	string addName;     
-	string addClother;
-	string addService;
-	string addDate;
+	ClientList* ptrClientList; //указатель на список клиентов
+	string addName;     //Фамилия И.О
+	string addClother; //Вид одежды
+	string addService; //Услуга
+	string addDate; //Дата обращения
 public:
 	ClientInputScreen(ClientList* ptrCL) : ptrClientList(ptrCL)
 	{
 	}
-	void setClient();
+	void setClient(); //ввод клиента
 };
 #endif 

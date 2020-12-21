@@ -1,7 +1,7 @@
 #include "stdafx.h" 
 #include "ClientInputScreen.h" 
 
-void ClientInputScreen::setClient()
+void ClientInputScreen::setClient()  //ввод клиентов
 {
 	cout << "Введите имя Клиента (Иванов И.И.): " << endl;
 	getaLine(addName);
@@ -12,6 +12,6 @@ void ClientInputScreen::setClient()
 	cout << "Введите дату обращения (01.10.2020): " << endl;
 	getaLine(addDate);
 	Client* ptrClient = new Client(addName, addClother, addService, addDate); 
-	ptrClientList->insertClient(ptrClient);           
+	ptrClientList->insertClient(ptrClient);    //добавить клиента в таблицу       
 
 }

@@ -3,13 +3,13 @@
 #include <string> 
 using namespace std;
 
-class Client
+class Client // класс клиента
 {
 private:
-	string name;   
-	string clother;
-	string service;
-	string date;
+	string name;   //фамилия и.о
+	string clother; //вид одежды
+	string service; //услуга
+	string date;  //дата обращения
 
 public:
 	Client(string n, string c, string s, string d);

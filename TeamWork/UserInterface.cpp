@@ -21,9 +21,9 @@ void UserInterface::interact()
 	do
 	{
 		ptrUserInputScreen = new UserInputScreen(ptrUser);
-		ptrUserInputScreen->setUser();
+		ptrUserInputScreen->setUser();     //обращение к методу ввода логина и пароля
 		system("cls");
-		if (ptrUserInputScreen->getRules() == 3) cout << "Пароль или логин неверный, введите еще раз\n";
+		if (ptrUserInputScreen->getRules() == 3) cout << "Пароль или логин неверный, введите еще раз\n"; //неавторизированный пользователь
 	} while (ptrUserInputScreen->getRules() == 3);
 
 	while (true)
@@ -33,11 +33,11 @@ void UserInterface::interact()
 		cout << "|          Меню            |\n";
 		cout << "|--------------------------|\n";
 		cout << "|  1  | Ввести данные      |\n";
-		if (ptrUserInputScreen->getRules() == 1) cout << "|  2  | Вывести данные     |\n";
+		if (ptrUserInputScreen->getRules() == 1) cout << "|  2  | Вывести данные     |\n";  //отображать это меню только если это директор
 		cout << "|  q  | Выход              |\n";
 		ch = getaChar();
 		system("cls");
-		if (ch == '1')       
+		if (ch == '1')       // меню ввода данных
 		{
 			cout << "\n";
 			cout << "|      Ввести данные       |\n";
@@ -65,9 +65,9 @@ void UserInterface::interact()
 				break;
 			}                     
 		}                      
-		else if (ch == '2')       
+		else if (ch == '2')       //меню вывода данных
 		{
-			if (ptrUserInputScreen->getRules() == 1)
+			if (ptrUserInputScreen->getRules() == 1)  // выводить если директор
 			{
 				cout << "\n";
 				cout << "|     Вывести на экран     |\n";
@@ -96,7 +96,7 @@ void UserInterface::interact()
 			}
 		}
   
-		else if (ch == 'q')
+		else if (ch == 'q')  //выход из программы
 			return;           
 		else     cout << "Ошибка ввода\n";
 	}                       
