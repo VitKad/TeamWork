@@ -3,13 +3,20 @@
 // are changed infrequently
 //
 
+
 #pragma once
 
 #include "targetver.h"
-
+#include <iomanip>
 #include <stdio.h>
 #include <tchar.h>
-
-
+#include <iostream> 
+#include <vector> 
+#include <list> 
+#include <string> 
+#include <numeric>
+#include <clocale>
+#include "Gets.h" 
+using namespace std;
 
 // TODO: reference additional headers your program requires here
