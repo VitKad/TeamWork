@@ -4,18 +4,18 @@
 
 
 using namespace std;
-class Profit
+class Profit //Класс доходов
 {
 private:
-	string name; 
-	float priceCloth;
-	float priceService;
-	string datePrice;
+	string name; //имя клиента
+	float priceCloth; //стоимость стирки
+	float priceService; //стоимость услуги
+	string datePrice;//дата оплаты
 public:
 	Profit(string, float, float, string);                 
-	float getPriceCloth();
-	string getName();            
-	float getPriceService(); 
-	string getDate();
+	float getPriceCloth(); //получить стоимость стирки
+	string getName();            //получить имя
+	float getPriceService(); //получить стоимость услуги
+	string getDate(); //получить дату оплаты
 };
 #endif

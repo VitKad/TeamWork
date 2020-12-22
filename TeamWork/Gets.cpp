@@ -1,7 +1,7 @@
 #include <iostream> 
 #include "stdafx.h" 
 
-void getaLine(string& inStr)
+void getaLine(string& inStr) //функция ввода строки
 {
 	char temp[21];
 	cin.get(temp, 20, '\n');
@@ -9,7 +9,7 @@ void getaLine(string& inStr)
 	inStr = temp;
 }
 
-char getaChar()                     
+char getaChar()                  //функция ввода символа   
 {
 	char ch = cin.get();
 	cin.ignore(80, '\n');   

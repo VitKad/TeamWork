@@ -1,7 +1,7 @@
 #include "stdafx.h" 
 #include "UserInputScreen.h" 
 
-void UserInputScreen::setUser() 
+void UserInputScreen::setUser()   //ввести логин и пароль
 {
 	cout << "¬ведите логин: " << endl;
 	getaLine(addLogin);

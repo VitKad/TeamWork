@@ -14,9 +14,9 @@ private:
 public:
 	Client(string n, string c, string s, string d);
 	~Client();
-	string getName(); 
-	string getClother();
-	string getService();
-	string getDate();
+	string getName(); //получить имя
+	string getClother();//получить вид одежды
+	string getService();//получить услугу
+	string getDate();//получить дату обащения
 };
 #endif   

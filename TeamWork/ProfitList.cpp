@@ -19,7 +19,7 @@ void ProfitList::insertProfit(Profit* ptrRow) {
 
 
 
-void ProfitList::display()                         
+void ProfitList::display()       //отоброжение на экране доходов                  
 {
 
 	cout << "\nФИО Клиента        |Стоимость стирки        |Стоимость услуги        |Общая стоимость         |Дата оплаты\n";
@@ -38,7 +38,7 @@ void ProfitList::display()
 	}
 }
 
-float ProfitList::getSumOfProfits()  
+float ProfitList::getSumOfProfits()  //общая сумма доходов
 {
 	float sumProfits = 0.0;
 	iter = setPtrsRR.begin();

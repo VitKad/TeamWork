@@ -3,16 +3,16 @@
 #include <vector> 
 #include "Expense.h"
 
-class ExpenseList
+class ExpenseList  //класс таблицы расходов
 {
 private:
-	vector<Expense*> vectPtrsExpenses;
-	vector<Expense*>::iterator iter;
+	vector<Expense*> vectPtrsExpenses;  //указатель контейнер вектор на расходы
+	vector<Expense*>::iterator iter; //итератор расходов
 public:
 	~ExpenseList();
-	void insertExp(Expense*);
-	void display();
-	float getSumOfExpenses();
+	void insertExp(Expense*); //добавление в таблицу расходов
+	void display(); //отображение на экране
+	float getSumOfExpenses(); //расчитать сумму всех расходов
 };
 
 #endif 

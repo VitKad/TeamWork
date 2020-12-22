@@ -11,12 +11,12 @@ ExpenseList::~ExpenseList()
 	}
 }
 
-void ExpenseList::insertExp(Expense* ptrExp)
+void ExpenseList::insertExp(Expense* ptrExp)   //добавление в таблицу расходов
 {
 	vectPtrsExpenses.push_back(ptrExp);
 }
 
-void ExpenseList::display()                
+void ExpenseList::display()      //отображение на экране данных о расходах          
 {
 	cout << "\nКатегория          |Получатель              |Дата                    |Сумма\n";
 	cout << "------------------------------------------------------------------------------------------------\n";
@@ -34,7 +34,7 @@ void ExpenseList::display()
 	}
 }
 
-float ExpenseList::getSumOfExpenses()
+float ExpenseList::getSumOfExpenses()   //общая сумма доходов
 {
 	float totalExpenses = 0; 
 	if (vectPtrsExpenses.size() == 0)

@@ -57,7 +57,7 @@ void UserInterface::interact()  //отображение главного меню
 				delete ptrClientInputScreen;
 				break;
 				break;
-			case '2': ptrProfitInputScreen = new ProfitInputScreen(ptrClientList, ptrProfitList);
+			case '2': ptrProfitInputScreen = new ProfitInputScreen(ptrProfitList);
 				ptrProfitInputScreen->setProfit();
 				delete ptrProfitInputScreen;
 				break;

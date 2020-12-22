@@ -2,12 +2,12 @@
 #define EXPENSEINPUTSCREEN_H  
 #include "ExpenseList.h"
 
-class ExpenseInputScreen
+class ExpenseInputScreen //класс экрана ввода расходов
 {
 private:
-	ExpenseList* ptrExpenseList; 
+	ExpenseList* ptrExpenseList; //указатель на таблицу расходов
 public:  ExpenseInputScreen(ExpenseList*);
-		 void setExpense();
+		 void setExpense(); //ввести расходы
 };
 
 #endif 

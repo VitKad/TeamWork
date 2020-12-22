@@ -6,19 +6,18 @@
 #include <string> 
 
 using namespace std;
-class ProfitInputScreen
+class ProfitInputScreen //класс экрана ввода доходов
 {
 private:
-	ClientList* ptrClientList;     
-	ProfitList* ptrProfitList;
-	string addName; 
-	float addPriceCloth;
-	float addPriceService;
-	string addDatePrice;
+	ProfitList* ptrProfitList; //указатель на таблицу доходов
+	string addName; //имя клиента введное пользователем
+	float addPriceCloth; //стоимость стирки введная пользователем
+	float addPriceService; //стоимость услуги введная пользователем
+	string addDatePrice; //дата оплаты введное пользователем
 public:
-	ProfitInputScreen(ClientList* ptrCL, ProfitList* ptrPL) : ptrClientList(ptrCL), ptrProfitList(ptrPL)
+	ProfitInputScreen(ProfitList* ptrPL) : ptrProfitList(ptrPL)
 	{
 	}
-	void setProfit(); 
+	void setProfit();  //ввод доходов
 };
 #endif

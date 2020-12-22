@@ -14,6 +14,7 @@
 class UserInterface
 {
 private:
+	//указатели на таблицы и экраны ввода
 	UserInputScreen* ptrUserInputScreen;
 	User* ptrUser;
 	ClientList* ptrClientList;
@@ -27,7 +28,7 @@ private:
 public:
 	UserInterface();
 	~UserInterface();
-	void interact();
+	void interact(); //основной интерфейс программы
 };
 
 #endif

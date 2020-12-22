@@ -5,7 +5,7 @@ ExpenseInputScreen::ExpenseInputScreen(ExpenseList* per) : ptrExpenseList(per)
 {
 }
 
-void ExpenseInputScreen::setExpense()
+void ExpenseInputScreen::setExpense()  //экран ввода расходов
 {
 
 	string category, payee, date;

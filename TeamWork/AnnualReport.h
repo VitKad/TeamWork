@@ -3,14 +3,15 @@
 #include "ProfitList.h"
 #include "ExpenseList.h"
 
-class AnnualReport
+class AnnualReport // Класс годового отчета
 {
-private:  ProfitList* ptrPL;         
-		  ExpenseList* ptrER;  
-		  float expenses, prof;   
+private:  ProfitList* ptrPL;  //указатель на таблицу доходов       
+		  ExpenseList* ptrER;  //указатель на таблицу расходов 
+		  float expenses; //сумма расходоы
+		  float prof; //сумма доходов 
 
 public:  AnnualReport(ProfitList*, ExpenseList*);
-		 void display(); 
+		 void display();  //отображение на экране
 };
 #endif  
 

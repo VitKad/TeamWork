@@ -5,7 +5,7 @@ AnnualReport::AnnualReport(ProfitList* pRR, ExpenseList* pER) : ptrPL(pRR), ptrE
 {
 }
 
-void AnnualReport::display()
+void AnnualReport::display()  //отображение данных на экране
 {
 	cout << "            Годовой отчет" << endl;
 	cout << "--------------------------------------\n";
